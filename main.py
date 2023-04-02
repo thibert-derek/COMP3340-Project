@@ -71,12 +71,9 @@ def get_products():
 
 if __name__ == '__main__':
     with app.app_context():
-        # db.drop_all()
-        # db.create_all()
-        # if not Product.query.first():
-        #     add_products()
+        db.drop_all()
+        db.create_all()
+        if not Product.query.first():
+            add_products()
 
-        products = Product.query.all()
-        for product in products:
-            print(product.name, product.price, product.description)
     app.run(debug=True)
