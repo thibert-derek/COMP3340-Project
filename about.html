@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AcademicEssentials - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="functions.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="topNav">
+            <a href="index.html">AcademicEssentials</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a id="currentPage" href="about.html">About</a>
+                <div class="container">
+                    <div class="shopping">
+                        <a>View Cart</a>
+                    </div>
+                 </div>
+                <a class="imgLink" href="cart.html"><img style="filter: invert(1)" src="cart-fill.svg"><span class="quantity">0</span></a>
+                <a id="expand" class="imgLink" onclick="expandFunction()"><img style="filter: invert(1)" src="chevron-down.svg"></a> 
+        </nav>
+    </header>
+    <!-- <div class="list"></div> -->
+    <div class="card">
+        <h1>Items in Cart</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <footer class="foot">&copy; 2023</footer>
+
+</body>
+</html>
