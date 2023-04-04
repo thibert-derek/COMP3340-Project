@@ -25,3 +25,5 @@ fetch('http://localhost:5000/get_products')
     });
     productContainer.innerHTML = html;
   });
+
+  
