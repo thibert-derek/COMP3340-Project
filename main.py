@@ -80,7 +80,4 @@ if __name__ == '__main__':
         if not Product.query.first():
             add_products()
 
-        products = Product.query.all()
-        for product in products:
-            print(product.name, product.price, product.description)
     app.run(debug=True)
